@@ -1,3 +1,8 @@
+-- Criação das bases
+CREATE DATABASE spring_batch;
+CREATE DATABASE migracao_dados;
+
+-- Criação das tabelas
 DROP TABLE IF EXISTS pessoa;
 CREATE TABLE pessoa(id INT, nome VARCHAR(500),email VARCHAR(500),data_nascimento DATETIME,idade INT, PRIMARY KEY(id));
 DROP TABLE IF EXISTS dados_bancarios;
