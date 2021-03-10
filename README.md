@@ -25,6 +25,9 @@ Caso a pessoa seja válida, a gravação do dado processado será feita no Banco
 ### migrarDadosBancariosStep
 Nesse caso foi utilizado apenas o ItemWriter para realizar a escrita no BD.
 
+### Importante
+O job trabalha com os dois steps em paralelo.
+
 ## Utilização
 Após realizar o 'fork/clone', executar o arquivo __/files/scripts.sql__ para criação do banco e tabelas.
 
