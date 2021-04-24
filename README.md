@@ -31,4 +31,9 @@ O job trabalha com os dois steps em paralelo.
 ## Utilização
 Após realizar o 'fork/clone', executar o arquivo __/files/scripts.sql__ para criação do banco e tabelas.
 
-Não esqueça de configurar usuário e senha do banco no arquivo de properties do projeto.
+Não esqueça de configurar usuário e senha do banco no arquivo de properties do projeto. <br />
+Mas caso queira mudar a implementação da base, ou o tipo do BD, basta mudar os apontamentos:
+
+- pom.xml
+- application.properties
+- DataSourceConfig.java
