@@ -2,6 +2,9 @@
 CREATE DATABASE spring_batch;
 CREATE DATABASE migracao_dados;
 
+-- SELECIONANDO BASE
+USE migracao_dados;
+
 -- Criação das tabelas
 DROP TABLE IF EXISTS pessoa;
 CREATE TABLE pessoa(id INT, nome VARCHAR(500),email VARCHAR(500),data_nascimento DATETIME,idade INT, PRIMARY KEY(id));
