@@ -29,7 +29,8 @@ Nesse caso foi utilizado apenas o ItemWriter para realizar a escrita no BD.
 O job trabalha com os dois steps em paralelo.
 
 ## Utilização
-Após realizar o 'fork/clone', executar o arquivo __/files/scripts.sql__ para criação do banco e tabelas.
+Após realizar o 'fork/clone', execute o comando `docker compose up` para subir a instancia do mysql no docker.
+Caso queira subir uma instancia do DB mysql diferente de um container, o script para criação dos bancos e tabelas estão na pasta __/mysql/init.sql__
 
 Não esqueça de configurar usuário e senha do banco no arquivo de properties do projeto. <br />
 Mas caso queira mudar a implementação da base, ou o tipo do BD, basta mudar os apontamentos:

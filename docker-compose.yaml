@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db-mysql:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    container_name: db-mysql
+    command : --innodb-use-native-aio=0 --init-file /data/application/init.sql
+    volumes:
+      - ./mysql/mysql_data:/var/lib/mysql
+      - ./mysql/init.sql:/data/application/init.sql
+    restart: always
+    tty: true
+    ports:
+      - 3306:3306
